@@ -93,4 +93,17 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Estilos para conteúdo HTML de notícias */
+  .prose h3 {
+    @apply text-2xl font-bold text-foreground mt-8 mb-4;
+  }
+
+  .prose p {
+    @apply mb-4 text-foreground/90;
+  }
+
+  .prose a {
+    @apply text-primary hover:underline;
+  }
 }

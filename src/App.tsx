@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Biografia from "./pages/Biografia";
 import Projetos from "./pages/Projetos";
 import Noticias from "./pages/Noticias";
+import NewsDetail from "./pages/NewsDetail";
 import PrestacaoContas from "./pages/PrestacaoContas";
 import Contato from "./pages/Contato";
 import NotFound from "./pages/NotFound";
@@ -29,6 +30,7 @@ const App = () => (
               <Route path="/biografia" element={<Biografia />} />
               <Route path="/projetos" element={<Projetos />} />
               <Route path="/noticias" element={<Noticias />} />
+              <Route path="/noticias/:slug" element={<NewsDetail />} />
               <Route path="/prestacao-contas" element={<PrestacaoContas />} />
               <Route path="/contato" element={<Contato />} />
               <Route path="*" element={<NotFound />} />
